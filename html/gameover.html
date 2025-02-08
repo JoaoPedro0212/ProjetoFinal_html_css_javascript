@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim de Jogo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>💀 Fim de Jogo!</h2>
+        <p>Pontos: <span id="pontuacaoFinal"></span></p>
+        <button onclick="window.location.href='jogo.html'">🔄 Recomeçar</button>
+        <button onclick="window.location.href='../index.html'">🏠 Voltar ao Menu</button>
+    </div>
+    <script>
+        document.getElementById('pontuacaoFinal').innerText = localStorage.getItem("pontuacao");
+    </script>
+</body>
+</html>
